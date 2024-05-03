@@ -3,82 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Productos | Tu Emprendimiento</title>
+    <link href="../css/styles.css " rel="stylesheet">
 </head>
 <body>
-    <h1>Productos</h1>
-    <!-- Contenido de la página de productos -->
-    <main>
-        <div class="container">
-            <h2>Productos</h2>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nombre del producto</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Producto 1</td>
-                        <td>$10</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Producto 2</td>
-                        <td>$20</td>
-                    </tr>
-                    <!-- Agregar más filas según sea necesario -->
-                </tbody>
-            </table>
-        </div>
-    </main>
-
-
-
-    <main>
-        <div class="container">
-            <h2>Productos</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="producto1.jpg" class="img-fluid" alt="Producto 1">
-                    <h3>Producto 1</h3>
-                    <p>Descripción del Producto 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="producto2.jpg" class="img-fluid" alt="Producto 2">
-                    <h3>Producto 2</h3>
-                    <p>Descripción del Producto 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+    <!-- Navbar y contenido de la página -->
+    <header>
+        <!-- Navbar Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Linder</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./noticias.html">Noticias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acercadenosotros.html">Acerca de nosotros</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+    
+        <!-- Agrega el código del navbar aquí -->
+    </header>
+    <main>
+        <h1>Nuestros Productos</h1>
+
+        <div class="product">
+            <img src="../img/masistas.jpg"  style="text-align: center;"alt="Producto 1">
+            <h2>Masas finas</h2>
+            <p>Las masas finas son una deliciosa, estas masas se caracterizan por ser livianas y crujientes, con un sabor delicado que complementa perfectamente con lo dulces, son ideales por su textura fina y dorada, junto con su capacidad para absorber sabores, las convierte en una elección popular entre los amantes de la repostería..</p>
         </div>
+
+        <div class="product">
+            <img src="../img/brownie de frutos rojos.jpg"  style="text-align: center;"alt="Producto 2">
+            <h2>Brownie de frutos rojos</h2>
+            <p>El brownie con frutos rojos es una exquisita combinación deLa base densa y chocolatada del brownie ofrece un contraste perfecto con la acidez y el color vibrante de los frutos rojos frescos que lo adornan en la parte superior esta delicia ofrece una explosión de sabores y texturas en cada bocadocreando una experiencia única para el paladar. Su apariencia atractiva y su sabor irresistible lo convierten en un favorito .</p>
+        </div>
+       
     </main>
     <footer>
-    </p> Haga click en los siguentes enlaces para ser redireccionado a
-    <nav>
-        <ul>
-            <li>
-                 <a href="../index.html">
-                    Inicio </a> </li>
-                    <li>
-                     <a href="productos.html">
-                        Productos
-                        </a>
-                        </li>
-                            <li>
-                                <a href="contacto.html"></a>Contactos
-                            </li>
-                        <li>
-                        <a href="sobrelinder.html">
-                    sobre Linder
-            </a>
-        </li>
-    </ul>
-</nav>
+    
     </footer>
-
+   
 </body>
 </html>
-
