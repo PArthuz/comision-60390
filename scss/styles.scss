@@ -1,0 +1,10 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'extends';
+
+
+h1 {
+    color: $primary-color;
+    @include text-underline;
+}
