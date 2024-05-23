@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Tu Emprendimiento</title>
-    <link href="../css/styles.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     
@@ -40,7 +39,30 @@
             <li>Email: info@linder.com</li>
             <li>Formulario de contacto: <a href="formulario.html">Completa nuestro formulario</a></li>
         </ul>
-
+        
+        <div class="container">
+            <h1>Contacto</h1>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción del Pedido</label>
+                    <textarea id="description" name="description" maxlength="500" required></textarea>
+                    <p id="charCount">0/500 caracteres</p>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
         <p>Síguenos en nuestras redes sociales:</p>
 
         <ul>
