@@ -1,0 +1,44 @@
+.navbar {
+  background-color: $navbar-bg-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+
+  .navbar-brand {
+    color: $navbar-text-color !important;
+  }
+
+  .navbar-toggler {
+    border: none;
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
+    }
+  }
+
+  .collapse {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    .navbar-nav {
+      display: flex;
+      gap: 1rem;
+
+      .nav-link {
+        color: $navbar-text-color !important;
+        &:hover {
+          color: lighten($navbar-text-color, 20%) !important;
+        }
+      }
+    }
+  }
+}
+
+// Otros estilos globales
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
