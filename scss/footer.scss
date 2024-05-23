@@ -1,0 +1,11 @@
+footer {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 20px;
+  text-align: center;
+
+  .image-container {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

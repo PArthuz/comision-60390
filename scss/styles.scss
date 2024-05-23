@@ -90,20 +90,52 @@ button {
 }
 
 .carousel-item {
-    height: 600px; // Ajusta esto según tu necesidad
+    height: 600px; 
 
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover; // Esto asegura que la imagen ocupe todo el contenedor
+        object-fit: cover; 
     }
 }
 
-.navbar .nav-link {
-  color: white;
-  font-weight: bold;
-}
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 
+  .navbar-brand {
+    color: black !important;
+  }
+
+  .navbar-toggler {
+    border: none;
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
+    }
+  }
+
+  .collapse {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    .navbar-nav {
+      display: flex;
+      gap: 1rem;
+
+      .nav-link {
+        color: whitesmoke !important;
+        &:hover {
+          color: lighten (whitesmoke, 20%) !important;
+        }
+      }
+    }
+  }
+}
 .footer {
   .image-container {
       display: flex;
@@ -114,13 +146,13 @@ button {
           display: flex;
           flex-direction: row;
           align-items: center;
-          width: calc(33.333% - 20px); // Adjust width to have 3 columns with some gap
+          width: calc(33.333% - 20px);
           margin-bottom: 20px;
 
           img {
-              max-width: 100px; // Adjust the width as needed
+              max-width: 100px; 
               height: auto;
-              margin-right: 20px; // Space between image and text
+              margin-right: 20px; 
           }
 
           .image-description {
@@ -131,7 +163,7 @@ button {
   }
 }
 
-// Responsive styles for mobile view
+
 @media (max-width: 768px) {
   .footer {
       .image-container {
